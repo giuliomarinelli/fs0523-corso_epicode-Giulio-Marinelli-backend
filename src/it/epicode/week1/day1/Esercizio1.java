@@ -23,6 +23,11 @@ public class Esercizio1 {
     return newStrArr;
     }
     public static void main(String[] args){
+        int x = 2, y = 3;
+        System.out.println(moltiplica(x, y));
+        String ciao = "ciao";
+        int n = 1;
+        System.out.println(concatena(ciao, n));
         String[] arrStr = {"A", "B", "C", "D", "E"};
         String str = "F";
         String[] res = inserisciInArray(arrStr, str);
