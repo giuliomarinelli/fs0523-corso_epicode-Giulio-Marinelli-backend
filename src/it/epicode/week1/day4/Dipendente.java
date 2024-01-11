@@ -1,6 +1,6 @@
 package it.epicode.week1.day4;
 
-
+// Finito
 
 public class Dipendente {
     private double stipendioBase = 1000;
