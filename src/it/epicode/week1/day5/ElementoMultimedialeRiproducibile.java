@@ -3,9 +3,9 @@ package it.epicode.week1.day5;
 public abstract class ElementoMultimedialeRiproducibile extends ElementoMultimediale {
     ElementoMultimedialeRiproducibile(String titolo, int durata) {
         super(titolo);
-        this.durata = durata;
+        if (durata > 0) this.durata = durata;
     }
-    private int durata;
+    private int durata = 1;
     public abstract void play();
 
     public int getDurata() {
