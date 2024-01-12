@@ -1,5 +1,5 @@
 package it.epicode.week1.day5;
-
+// Riproducibile quindi eredita dalla sottoclasse di ElementoMultimediale arricchita appositamente
 public class Video extends ElementoMultimedialeRiproducibile implements GestisceVolume, GestisceLuminosita {
     Video(String titolo, int durata, int volume, int luminosita) {
         super(titolo, durata);
@@ -39,7 +39,7 @@ public class Video extends ElementoMultimedialeRiproducibile implements Gestisce
     }
     @Override
     public void play() {
-        stampaNStringhe(getTitolo() + concatenaNStringhe("!", getVolume()) + concatenaNStringhe("*", getLuminosita()) , getDurata());
+        stampaNStringhe(getTitolo() + concatenaNStringhe("!", getVolume()) + concatenaNStringhe("*", getLuminosita()), getDurata());
     }
 
     @Override

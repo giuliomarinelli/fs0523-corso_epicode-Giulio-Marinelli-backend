@@ -1,5 +1,5 @@
 package it.epicode.week1.day5;
-
+// Riproducibile quindi eredita dalla sottoclasse di ElementoMultimediale arricchita appositamente
 public class RegistrazioneAudio extends ElementoMultimedialeRiproducibile implements GestisceVolume {
 
     RegistrazioneAudio(String titolo, int durata, int volume) {
@@ -7,7 +7,7 @@ public class RegistrazioneAudio extends ElementoMultimedialeRiproducibile implem
         if (volume >= 0 && volume <= 10) this.volume = volume;
     }
 
-    private int volume = 1;
+    private int volume;
 
     @Override
     public void abbassaVolume() {

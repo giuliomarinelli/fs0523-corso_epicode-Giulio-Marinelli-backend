@@ -1,12 +1,11 @@
 package it.epicode.week1.day5;
-
+// E' la madre di tutte le altre classi (ad eccezione di LettoreMultimediale)
 public abstract class ElementoMultimediale {
-    public abstract void esegui();
     private String titolo;
-
     public ElementoMultimediale(String titolo) {
         this.titolo = titolo;
     }
+    public abstract void esegui();
 
     public String getTitolo() {
         return titolo;
@@ -16,13 +15,12 @@ public abstract class ElementoMultimediale {
         this.titolo = titolo;
     }
 
-
-    public static void stampaNStringhe(String str, int n) {
+    protected static void stampaNStringhe(String str, int n) {
         for (int i = 0; i < n; i++) {
             System.out.println(str);
         }
     }
-    public static String concatenaNStringhe(String str, int n) {
+    protected static String concatenaNStringhe(String str, int n) {
         String concatenamento = "";
         for (int i = 0; i < n; i++) {
             concatenamento += str;

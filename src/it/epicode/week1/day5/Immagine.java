@@ -1,9 +1,9 @@
 package it.epicode.week1.day5;
-
+// Non riproducibile quindi eradita direttamente da ElementoMultimediale
 public class Immagine extends ElementoMultimediale implements GestisceLuminosita, GestisceShow {
     Immagine(String titolo, int luminosita) {
         super(titolo);
-        this.luminosita = luminosita;
+        if (luminosita >= 0 && luminosita <= 10) this.luminosita = luminosita;
     }
 
     private int luminosita;
