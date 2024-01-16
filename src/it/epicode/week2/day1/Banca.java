@@ -11,7 +11,7 @@ public class Banca {
         System.out.println("Saldo conto: " + conto1.restituisciSaldo());
 
         try {
-            conto1.preleva(1750.5);
+            conto1.preleva(221750.5);
 
             System.out.println("Saldo conto: " + conto1.restituisciSaldo());
         } catch (BancaException e) {
