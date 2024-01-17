@@ -18,7 +18,6 @@ public class Esercizio1 {
             boolean parolaAggiunta = parole.add(parola);
             if (!parolaAggiunta) {
                 paroleDuplicate.add(parola);
-                parole.remove(parola);
             }
         }
         System.out.println("Parole duplicate: " + paroleDuplicate);
